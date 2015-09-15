@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="#009688"
+        android:text="K"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="#9E9E9E"
+        android:text="NU"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="#009688"
+        android:paddingLeft="8dp"
+        android:text="수업 관리 시스템"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        />
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sign_in_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="8dp"
+            android:background="@drawable/conner_round"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#757575"
+            android:text="2009037253"
+            android:hint="id" />
+
+        <EditText
+            android:id="@+id/sign_in_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/conner_round"
+            android:layout_marginRight="16dp"
+            android:text="2009037253"
+            android:textColor="#757575"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/sign_in_bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/selector_default"
+        android:text="등록"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
